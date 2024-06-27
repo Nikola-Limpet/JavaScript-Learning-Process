@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Scoreboard</title>
 </head>
 <body>
@@ -10,18 +11,22 @@
 
   <div class="scoreboard">
     <table>
-      <tr>
-        <td>Team 1</td>
-        <td>Team 2</td>
-      </tr>
-      <tr>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td><button onclick="increaseScore(1)">+1</button></td>
-        <td><button onclick="increaseScore(2)">+1</button></td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Team 1</th>
+          <th>Team 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="team1Score">0</td>
+          <td id="team2Score">0</td>
+        </tr>
+        <tr>
+          <td><button id='increaseScore1'>+1</button></td>
+          <td><button id='increaseScore2'>+1</button></td>
+        </tr>
+      </tbody>
     </table>
 
 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector(".b1").addEventListener("click", function() {
+                    document.querySelector("#result").innerHTML = "Incorrect";
+                    document.querySelector(".b1").style.backgroundColor = "red";
+                    //after incorrect answer, button turns to red then turn it to normal to select other choice  
+                  
+                });
+                document.querySelector(".b2").addEventListener("click", function() {
+                    document.querySelector("#result").innerHTML = "Incorrect";
+                    document.querySelector(".b2").style.backgroundColor = "red";
+                    
+                });
+                document.querySelector(".b3").addEventListener("click", function() {
+                    document.querySelector("#result").innerHTML = "Incorrect";
+                    document.querySelector(".b3").style.backgroundColor = "red";
+                  
+                });
+                document.querySelector(".b4").addEventListener("click", function() {
+                    document.querySelector("#result").innerHTML = "Incorrect";
+                    document.querySelector(".b4").style.backgroundColor = "red";
+                    
+                });
+                document.querySelector(".b5").addEventListener("click", function() {
+                    document.querySelector("#result").innerHTML = "Correct";
+                    // button turn to green
+                    document.querySelector(".b5").style.backgroundColor = "green";
+                });
+                if (document.querySelector(".button").style.backgroundColor = "red") {
+                        document.querySelector(".button").style.backgroundColor = "white";
+                    }
+            });
+          
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>What is a correct term for the following piece of Python syntax: 3 + 4</h3>
+                 <button class="button b1" >A statement.</button>
+                 <button class="button b2" >A lambda.</button>
+                 <button class="button b3" >A closure.</button>
+                 <button class="button b4" >A suite.</button>
+                 <button class="button b5" >An expression.</button> <br>
+                 <p id="result"> </p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
