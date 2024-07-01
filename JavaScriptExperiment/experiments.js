@@ -31,3 +31,9 @@ function addfive(number) {
 
 console.log(addfive(5));
 console.log(addfive(someVar));  // someVar is out of scope it no long use here outside the function addfive
+
+
+function alertName(event) {
+  const name = event.target.value;
+  alert(`Hello ${name}!`);
+}
