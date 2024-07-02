@@ -1,0 +1,17 @@
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex: 1;
+  list-style-type: none;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.active {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
