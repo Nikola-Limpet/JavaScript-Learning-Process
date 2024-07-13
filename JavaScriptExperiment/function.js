@@ -90,9 +90,36 @@ Workshop.prototype.ask = function(question) {   // like we have object workshop 
   // object we create function ask but instead we use prototype 
   console.log(this.teacher, question);
 };
+/* deepJS does not have ask method right?
+  so, we create an instance as deepJS by new keyword so in order to call ask we have to use prototype
+  mean that prototype is  where we can link to it.
 
+
+  in python, we have self. it is similar to python when we have construstor and create method 
+  we have to put self as an argument inside that in order to access it.
+*/
 var deepJS = new Workshop("Kyle");
 var reactJS = new Workshop("Suzy");
 
 deepJS.ask("Isn't prototype is a class?");
 reactJS.ask("Is prototype is Ugly");
+// function Workshop become construtor
+
+
+// use Class {}
+
+class Workshop {
+  constructor(teacher) {
+    this.teacher = teacher
+  }
+  ask(question) {
+    console.log(this.teacher, question);  
+  }
+}
+
+var deepJS = new Workshop("Yuujin");
+var reactJS = new Workshop("Joe");
+
+// access method of class Workshop 
+deepJS.ask("Nice to meet you!");
+reactJS.ask("Hi prof!");
