@@ -78,7 +78,7 @@ function reduce(array, callback, initialValue) {
   return accumulator;
 }
 
-consolw.log(reduce([1,2,3], (a,b) => a + b, 10)) // 16
+console.log(reduce([1,2,3], (a,b) => a + b, 10)) // 16
 
 // Challenge 7
 // Construct a function intersection that takes in an array of arrays, 
