@@ -67,3 +67,14 @@ function mapWith(array, callback) {
   });
   return output;
 }
+
+
+// Challenge 6
+function reduce(array, callback, initialValue) {
+  let accumulator = initialValue;
+  forEach(array, function(value) {
+    accumulator = callback(accumulator, value);
+  });
+  return accumulator;
+}
+
