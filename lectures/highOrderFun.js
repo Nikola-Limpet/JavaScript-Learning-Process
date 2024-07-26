@@ -81,6 +81,9 @@ function reduce(array, callback, initialValue) {
 consolw.log(reduce([1,2,3], (a,b) => a + b, 10)) // 16
 
 // Challenge 7
+// Construct a function intersection that takes in an array of arrays, 
+// compares the inner arrays, and returns a new array with elements found in all of them. 
+// BONUS: Use reduce!
 
 function intersection(arrays) {
   return reduce(arrays, function(a,b) {
