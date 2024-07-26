@@ -52,3 +52,5 @@ forEach(letter, function(char) {
 });
 
 console.log(alphabet); // abcdefghij
+
+// Challenge 5
