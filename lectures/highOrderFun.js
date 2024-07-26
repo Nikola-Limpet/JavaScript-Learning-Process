@@ -78,3 +78,8 @@ function reduce(array, callback, initialValue) {
   return accumulator;
 }
 
+consolw.log(reduce([1,2,3], (a,b) => a + b, 10)) // 16
+
+// Challenge 7
+
+
