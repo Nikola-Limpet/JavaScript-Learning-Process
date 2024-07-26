@@ -82,4 +82,15 @@ consolw.log(reduce([1,2,3], (a,b) => a + b, 10)) // 16
 
 // Challenge 7
 
+function intersection(arrays) {
+  return reduce(arrays, function(a,b) {
+    const result = [];
+    forEach(a, function(value) {
+      if (b.includes(value)) {
+        result.push(value);
+      }
+    });
+    return result;
+  }, arrays[0]);
+}
 
