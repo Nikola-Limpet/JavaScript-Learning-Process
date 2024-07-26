@@ -25,7 +25,7 @@
 const addTwo = input => input +2;
 
 function map(arr, callBack) {
-  const output = []
+  const output = [];
   for (let i = 0; i < arr.length; i++) {
     output.push(callBack(arr[i]))
   }
@@ -33,3 +33,22 @@ function map(arr, callBack) {
 }
 
 console.log(map([1,2,3], addTwo)) // [3,4,5]
+
+
+// Challenge 4
+function forEach(array, callback) {
+  const output = [];
+	for(let i = 0; i < array.length; i++) {
+    output.push(callback(array[i]));
+  };
+  
+}
+
+let alphabet = '';
+const letter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+
+forEach(letter, function(char) {
+  alphabet += char;
+});
+
+console.log(alphabet); // abcdefghij
