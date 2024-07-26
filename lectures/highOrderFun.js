@@ -43,7 +43,6 @@ function forEach(array, callback) {
 	for(let i = 0; i < array.length; i++) {
     output.push(callback(array[i]));
   };
-  
 }
 
 let alphabet = '';
