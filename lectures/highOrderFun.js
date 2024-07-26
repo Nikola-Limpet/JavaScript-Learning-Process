@@ -98,3 +98,30 @@ function intersection(arrays) {
 
 console.log(intersection([[5,10,15,20], [15,88,1,5,7], [1,10,15,5,20]])) // [5,15]
 
+
+
+// challenge 8
+// Construct a function union that takes an input of arrays,
+// compares each array, and returns a new flat array with all elements.
+// If there are duplicate elements, only add it once to the new array.
+// Preserve the order of the elements starting from the first element of the first input array.
+// BONUS: Use reduce!
+
+function union(arrays) {
+  return reduce(arrays, function(a,b) {
+    const result = [];
+    forEach(a, function(value)  {
+      if(!result.includes(value)) {
+        result.push(value);
+      }
+    }
+    );
+    forEach(b, function(value) {
+      if(!result.includes(value)) {
+        result.push(value);
+      }
+    });
+    return result;
+  }
+  );
+}
