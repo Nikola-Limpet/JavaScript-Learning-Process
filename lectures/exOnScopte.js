@@ -59,6 +59,14 @@ function addByX(x) {
   return add;
 }
 
+/* step are being stoed in the local memory of addByX(but it's not in the global memory
+so the value of step is not being changed)
+then start plug in the value of the const addByTwo = addByX(2) and the value of step is 2
+but when the new const begin decleared it will be stored in the local memory of addByXs
+
+*/ 
+
+
 // /*** Uncomment these to check your work! ***/
 const addByTwo = addByX(2);
 addByTwo(1); // => should return 3
