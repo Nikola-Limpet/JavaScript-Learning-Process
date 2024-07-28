@@ -84,7 +84,17 @@ addByTwo(3); // => should return 5
 
 // CHALLENGE 4
 function once(func) {
-
+  let counter = 0;
+  let result;
+  return function(num) {
+    if (counter === 0) {
+      counter++;
+      result = func(num);
+      return result;
+    } else {
+      return result;
+    }
+  }
 }
 
 // /*** Uncomment these to check your work! ***/
