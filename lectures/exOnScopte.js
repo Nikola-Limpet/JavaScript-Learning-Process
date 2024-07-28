@@ -53,7 +53,7 @@ willCounter();
 function addByX(x) {
   let step = x;
   function add(start) {
-    console.log(start + step);
+    //console.log(start + step);
     return start + step;
   }
   return add;
