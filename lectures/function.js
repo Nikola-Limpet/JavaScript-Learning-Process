@@ -10,6 +10,9 @@ const myNewFunction = outer();
 myNewFunction();
 myNewFunction();
 
+const anotherNewFunction = outer();
+anotherNewFunction();
+anotherNewFunction();
 
 /*  What can we call it backpack?
 
