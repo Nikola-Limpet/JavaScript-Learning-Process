@@ -44,7 +44,7 @@ else if(computerOne === 1) {
     Computer1 picked:  ${choice[computerOne]}
     Computer2 picked: ${choice[computerTwo]}
     
-    Computer1 won!🎉
+    Computer2 won!🎉
     `);
   }
 }
