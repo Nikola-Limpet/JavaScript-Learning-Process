@@ -5,9 +5,9 @@ const choice = ['Rock', 'Paper', 'Scissors']
 let computerOne = Math.floor(Math.random() * 3);
 let computerTwo = Math.floor(Math.random() * 3);
 
-if(computerOne === computerTwo) {
+if(computerOne == computerTwo) {
   console.log(`
-  Computer1 picked:  ${choice[computerOne]}
+  Computer1 picked: ${choice[computerOne]}
   Computer2 picked: ${choice[computerTwo]}
   Draw!🎉
   `);
