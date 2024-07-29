@@ -15,7 +15,7 @@ if(computerOne == computerTwo) {
 else if (computerOne == 0) {
   if(computerTwo == 1) {
     console.log(`
-    Computer1 picked:  ${choice[computerOne]}
+    Computer1 picked: ${choice[computerOne]}
     Computer2 picked: ${choice[computerTwo]}
     
     Computer2 won!🎉
