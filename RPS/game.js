@@ -2,17 +2,15 @@
 
 const choice = ['Rock', 'Paper', 'Scissors'] 
 
-let computerOne= Math.random( 1 * 2);
-
-let computerTwo = Math.random(1 * 2);
+let computerOne = Math.floor(Math.random() * 3);
+let computerTwo = Math.floor(Math.random() * 3);
 
 if(computerOne === computerTwo) {
   console.log(`
   Computer1 picked:  ${choice[computerOne]}
   Computer2 picked: ${choice[computerTwo]}
   Draw!🎉
-  `
-  )
+  `);
 }
 else if (computerOne == 0) {
   if(computerTwo == 1) {
@@ -21,8 +19,7 @@ else if (computerOne == 0) {
     Computer2 picked: ${choice[computerTwo]}
     
     Computer2 won!🎉
-    `
-    )
+    `);
   }
   else {
     console.log(`
@@ -30,8 +27,7 @@ else if (computerOne == 0) {
     Computer2 picked: ${choice[computerTwo]}
     
     Computer1 won!🎉
-    `
-    )
+    `);
   }
 }
 else if(computerOne === 1) {
@@ -41,8 +37,7 @@ else if(computerOne === 1) {
     Computer2 picked: ${choice[computerTwo]}
     
     Computer1 won!🎉
-    `
-    )
+    `);
   }
   else {
     console.log(`
@@ -50,8 +45,7 @@ else if(computerOne === 1) {
     Computer2 picked: ${choice[computerTwo]}
     
     Computer1 won!🎉
-    `
-    )
+    `);
   }
 }
 
