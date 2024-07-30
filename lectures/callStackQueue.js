@@ -12,3 +12,14 @@ setTimeout(() => {
 console.log('5');
 
 // What will be the output of the code above? 🤔
+
+// Becuz of the event loop, the setTimeout function will be pushed to the queue
+// when the call stack is empty. The setTimeout function with 0ms will be pushed
+// to the queue first, then the setTimeout function with 1000ms will be pushed to
+// the queue. The setTimeout function with 0ms will be executed first, then the
+// setTimeout function with 1000ms will be executed. The output will be:
+// 1
+// 3
+// 5
+// 4
+// 2
