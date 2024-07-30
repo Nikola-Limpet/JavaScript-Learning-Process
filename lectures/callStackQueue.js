@@ -23,3 +23,19 @@ console.log('5');
 // 5
 // 4
 // 2
+
+
+
+function promised (val) {
+  // ADD CODE HERE
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(val)
+    }, 2000)
+  })
+  return promise;
+}
+const createPromise = promised('wait for it...');
+createPromise.then((val) => console.log(val)); 
+// will log "wait for it..." to the console after 2 seconds
+
