@@ -39,3 +39,30 @@ const createPromise = promised('wait for it...');
 createPromise.then((val) => console.log(val)); 
 // will log "wait for it..." to the console after 2 seconds
 
+class SecondClock {
+  constructor(cb) {
+    // ADD CODE HERE
+    this.cb = cb;
+    this.second = 0;
+  }
+  // ADD METHODS HERE
+  start() {
+    this.timer = setInterval(() => {
+      this.cb(this.second);
+      this.second++;
+    }, 1000);
+  }
+  reset() {
+    clearInterval(this.timer);
+    this.second = 0;
+  }
+}
+
+// UNCOMMENT THESE TO TEST YOUR WORK!
+const clock = new SecondClock((val) => { console.log(val) });
+console.log("Started Clock.");
+clock.start();
+setTimeout(() => {
+     clock.reset();
+     console.log("Stopped Clock after 6 seconds.");
+ }, 6000);
