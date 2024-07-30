@@ -23,5 +23,5 @@ def fcfs_scheduling(processes):
     print(f"Average Turnaround Time: {avg_turnaround_time}")
 
 # Example usage
-processes = [(1, 24), (2, 3), (3, 3)]  # (process_id, burst_time)
+processes = [(1, 3), (2, 3), (3, 3)]  # (process_id, burst_time)
 fcfs_scheduling(processes)
