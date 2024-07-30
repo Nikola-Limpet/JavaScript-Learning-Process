@@ -47,10 +47,9 @@ class SecondClock {
   }
   // ADD METHODS HERE
   start() {
-    this.timer = setInterval(() => {
-      this.cb(this.second);
-      this.second++;
-    }, 1000);
+    this.timer = setInterval( () => {
+      this.cb(++this.second % 60)
+    }, 1000)
   }
   reset() {
     clearInterval(this.timer);
