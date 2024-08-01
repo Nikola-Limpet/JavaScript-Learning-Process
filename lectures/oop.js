@@ -34,4 +34,22 @@ user3.name = 'Eva';
 user3.score = 9;  
 user3.increment = () => user3.score++;
 
-// Creating user4 use Object.create
+
+
+// Solution 1 - Factory Functions
+// Factory functions are functions that create and return objects
+// Generate object using a function
+function createUser(name, score) {
+  const newUser = {};
+  newUser.name = name;
+  newUser.score = score;
+  newUser.increment = () => newUser.score++;
+  return newUser;
+}
+
+// const user1 = createUser('Will', 3); 
+// const user2 = createUser('Tim', 6);
+// const user3 = createUser('Eva', 9);
+// user1.increment();
+
+
