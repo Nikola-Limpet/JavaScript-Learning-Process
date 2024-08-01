@@ -10,3 +10,15 @@ const user1 = {
 };
 
 user1.increment(); // user1.score = 4
+
+
+// Creating user2 use dot notation
+// Decleare an empty object and add  properties to it with dot notation
+
+
+const user2 = {};
+
+// assign properties to that object
+user2.name = 'Tim';
+user2.score = 6;
+user2.increment = () => user2.score++;
