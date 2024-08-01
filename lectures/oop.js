@@ -27,3 +27,11 @@ user2.increment = () => user2.score++;
 
 // Creating user3 use Object.create
 // Object.create takes in an object as a parameter and creates a new object with that object as its prototype
+
+const user3 = Object.create(null);
+
+user3.name = 'Eva';
+user3.score = 9;  
+user3.increment = () => user3.score++;
+
+// Creating user4 use Object.create
