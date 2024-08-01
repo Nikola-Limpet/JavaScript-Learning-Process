@@ -22,3 +22,8 @@ const user2 = {};
 user2.name = 'Tim';
 user2.score = 6;
 user2.increment = () => user2.score++;
+
+
+
+// Creating user3 use Object.create
+// Object.create takes in an object as a parameter and creates a new object with that object as its prototype
