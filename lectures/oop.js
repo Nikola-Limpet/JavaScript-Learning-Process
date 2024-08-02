@@ -53,20 +53,41 @@ function createUser(name, score) {
 // user1.increment();
 
 
-// Solution 2 - Using Object.create
+// // Solution 2 - Using Object.create
 
-function userCreator(name, score) {
-  const newUser = Object.create(userFunctionStore);
-  newUser.name = name;
-  newUser.score = score;
-  return newUser;
+// function userCreator(name, score) {
+//   const newUser = Object.create(userFunctionStore);
+//   newUser.name = name;
+//   newUser.score = score;
+//   return newUser;
+// }
+
+// const userFunctionStore = {
+//   increment: function() { this.score++; },
+//   login: function() { console.log('You are loggedin'); }
+// }
+
+// const user1 = userCreator('Will', 3);
+// const user2 = userCreator('Tim', 6);
+// user1.increment();
+
+
+// Solution 3 - Using the new keyword
+
+function UserCreator(name, score) {
+  this.name = name;
+  this.score = score;
+
+  // it stored in the prototype of the object
+  // a big empty object that is shared by all instances of the object
+  // So in the below code we can use .prototype to store the increment function
 }
 
-const userFunctionStore = {
-  increment: function() { this.score++; },
-  login: function() { console.log('You are loggedin'); }
-}
+UserCreator.prototype.increment = function() {
+  this.score++;
+};
+UserCreator.prototype.login = function() { console.log('You are loggedin'); };
 
-const user1 = userCreator('Will', 3);
-const user2 = userCreator('Tim', 6);
+const user1 = new UserCreator('Will', 3);
+const user2 = new UserCreator('Tim', 6);
 user1.increment();
