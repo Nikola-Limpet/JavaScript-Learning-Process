@@ -91,3 +91,18 @@ function createUser(name, score) {
 // const user1 = new UserCreator('Will', 3);
 // const user2 = new UserCreator('Tim', 6);
 // user1.increment();
+
+
+// Solution 4 - Using the class keyword (syntactic sugar)
+
+class UserCreator {
+  constructor(name, score) {
+    this.name = name;
+    this.score = score;
+  }
+  increment() { this.score++; }
+  login() { console.log('You are loggedin'); }
+}
+
+const user1 = new UserCreator('Will ', 3);
+const user2 = new UserCreator('Tim', 6);
