@@ -53,3 +53,20 @@ function createUser(name, score) {
 // user1.increment();
 
 
+// Solution 2 - Using Object.create
+
+function userCreator(name, score) {
+  const newUser = Object.create(userFunctionStore);
+  newUser.name = name;
+  newUser.score = score;
+  return newUser;
+}
+
+const userFunctionStore = {
+  increment: function() { this.score++; },
+  login: function() { console.log('You are loggedin'); }
+}
+
+const user1 = userCreator('Will', 3);
+const user2 = userCreator('Tim', 6);
+user1.increment();
