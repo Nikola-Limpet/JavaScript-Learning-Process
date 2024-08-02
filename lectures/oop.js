@@ -74,20 +74,20 @@ function createUser(name, score) {
 
 // Solution 3 - Using the new keyword
 
-function UserCreator(name, score) {
-  this.name = name;
-  this.score = score;
+// function UserCreator(name, score) {
+//   this.name = name;
+//   this.score = score;
 
-  // it stored in the prototype of the object
-  // a big empty object that is shared by all instances of the object
-  // So in the below code we can use .prototype to store the increment function
-}
+//   // it stored in the prototype of the object
+//   // a big empty object that is shared by all instances of the object
+//   // So in the below code we can use .prototype to store the increment function
+// }
 
-UserCreator.prototype.increment = function() {
-  this.score++;
-};
-UserCreator.prototype.login = function() { console.log('You are loggedin'); };
+// UserCreator.prototype.increment = function() {
+//   this.score++;
+// };
+// UserCreator.prototype.login = function() { console.log('You are loggedin'); };
 
-const user1 = new UserCreator('Will', 3);
-const user2 = new UserCreator('Tim', 6);
-user1.increment();
+// const user1 = new UserCreator('Will', 3);
+// const user2 = new UserCreator('Tim', 6);
+// user1.increment();
