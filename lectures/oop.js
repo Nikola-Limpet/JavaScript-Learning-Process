@@ -3,13 +3,13 @@
 // this is the principle of encapsulation- and it's going to tranform the way 
 //you write code
 
-const user1 = {
-  name: 'will', 
-  score : 3,
-  increment: () => user1.score++
-};
+// const user1 = {
+//   name: 'will', 
+//   score : 3,
+//   increment: () => user1.score++
+// };
 
-user1.increment(); // user1.score = 4
+// user1.increment(); // user1.score = 4
 
 
 // Creating user2 use dot notation
