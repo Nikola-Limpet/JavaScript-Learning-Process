@@ -58,3 +58,23 @@ class Eang extends Bird {
 // and only showing the necessary parts to the user. 
 // rather than dealing with a specific manifestation of that concept. 
  
+// OOP principles: Polymorphism
+// Polymorphism has to do with the ability of an object to take many forms.
+// In the sense that, an object can be used in place of another object.
+// This is achieved through inheritance and method overriding.
+// Method overriding is a concept in which a child class can provide
+
+// example of polymorphism in JavaScript
+const bicycle = {
+  bell: function() {
+    return "Ring, ring! Watch out, please!"
+}
+}
+const door = {
+  bell: function() { // overriding the bell method
+    return "Ring, ring! Come here, please!"
+}
+}
+
+bicycle.bell(); // Ring, ring! Watch out, please!
+door.bell(); // Ring, ring! Come here, please!
