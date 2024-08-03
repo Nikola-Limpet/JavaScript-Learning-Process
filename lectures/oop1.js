@@ -53,5 +53,8 @@ class Eang extends Bird {
 // U just need to knwo how to use it.
 
 
-
+// OOP principles: Abstraction
+// Abstraction has to do with hiding the complex implementation of a code from the users
+// and only showing the necessary parts to the user. 
+// rather than dealing with a specific manifestation of that concept. 
  
