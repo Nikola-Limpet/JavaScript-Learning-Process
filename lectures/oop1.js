@@ -35,3 +35,17 @@ class Eang extends Bird {
 
 // let eang = new Eang('Eang');
 // eang.speak(); // Eang chirps. 
+
+
+// OOP principles: Encapsulation 
+// Encapsulation has to do with making a code implementation hidden from the other users.
+// In the sense that, the user does not need to know how the code is implemented, 
+//but only needs to know how to use it.
+
+
+// example of encapsulation in JavaScript 
+
+// 'abc'.toUpperCase();
+// 'abc'.toLowerCase();
+// 'abc'.charAt(1); 
+ 
