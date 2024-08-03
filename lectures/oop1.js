@@ -25,3 +25,13 @@ class Eang extends Bird {
     console.log(this.name + ' chirps.');
   }
 }
+
+
+// let dog = new Dog('Rex');
+// dog.speak(); // Rex barks.
+
+// let bird = new Bird('Tweety');
+// bird.speak(); // Tweety chirps.
+
+// let eang = new Eang('Eang');
+// eang.speak(); // Eang chirps. 
