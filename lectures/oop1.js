@@ -48,4 +48,10 @@ class Eang extends Bird {
 // 'abc'.toUpperCase();
 // 'abc'.toLowerCase();
 // 'abc'.charAt(1); 
+
+// at this point meaning that you dont need to know how to implement the toUpperCase, toLowerCase, charAt methods
+// U just need to knwo how to use it.
+
+
+
  
