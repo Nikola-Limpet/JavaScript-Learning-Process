@@ -10,8 +10,8 @@ fruit.forEach((item, index) => {
 
 let nums = [0 , 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-nums.filter((nums) => {
-  return nums >= 2;
+nums.filter(function (num) {
+  return num >= 2;
 });
 
 console.log(nums);
