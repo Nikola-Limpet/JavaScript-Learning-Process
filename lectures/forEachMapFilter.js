@@ -43,8 +43,11 @@ let beatBoxers = new Map();
 beatBoxers.set('1', 'The Champion'); 
 beatBoxers.set('2', 'The Runner Up');
 beatBoxers.set('3', 'The Second Runner Up');
-
+// get specfic value
+// console.log(beatBoxers.get('1')); // The Champion
 console.log(beatBoxers);
 
-
-
+// Working with sets
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits);
