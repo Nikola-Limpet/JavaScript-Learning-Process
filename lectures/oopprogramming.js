@@ -26,6 +26,22 @@ class Worker extends Person {
 }
 
 // Task 3: Code an intern object, run methods
+// Inside the intern function instantiate the `Worker` class to code a new intern object.
+
+// The intern should have the following characteristics:
+// ```
+// name: Bob
+
+// age: 21
+
+// energy: 110
+
+// xp: 0
+
+// hourlyWage: 10
+// ```
+
+// Run the `goToWork()` method on the intern object. Then `return` the intern object.
 function intern() {
   let intern = new Worker();
   intern.goToWork();
