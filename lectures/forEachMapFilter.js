@@ -38,3 +38,13 @@ droneKeys.forEach((key) => {
 
 console.log(result); // ['speed', 100, 'color', 'red']
 
+
+let beatBoxers = new Map();
+beatBoxers.set('1', 'The Champion'); 
+beatBoxers.set('2', 'The Runner Up');
+beatBoxers.set('3', 'The Second Runner Up');
+
+console.log(beatBoxers);
+
+
+
