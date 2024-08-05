@@ -43,21 +43,33 @@ class Worker extends Person {
 
 // Run the `goToWork()` method on the intern object. Then `return` the intern object.
 function intern() {
-  let intern = new Worker();
-  intern.goToWork();
-  console.log(intern.xp);
-  intern.sleep();
-  console.log(intern.energy);
-  intern.doSomethingFun();
+  let worker = new Worker("Bob", 21, 110, 0, 10);
+  worker.goToWork();
+
+  return worker;
 
 }
 
+// Inside the manager function instantiate the `Worker` class to code a new `manager` object.
+
+// The manager object should have the following characteristics:
+// ```
+// name: Alice
+
+// age: 30
+
+// energy: 120
+
+// xp: 100
+
+// hourlyWage: 30
+// ```
+
+// Run the `doSomethingFun()` method on the manager object. Then `return` the manager object.
+
 // Task 4: Code a manager object, methods
 function manager() {
-  let manager = new Worker();
-  manager.goToWork();
-  console.log(manager.xp);
-  manager.sleep();
-  console.log(manager.energy);
+  let manager = new Worker("Alice", 30, 120, 100, 30);
   manager.doSomethingFun();
+  return manager;
 }
