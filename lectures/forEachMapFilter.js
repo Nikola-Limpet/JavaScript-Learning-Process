@@ -14,5 +14,14 @@ nums.filter(function (num) {
   return num >= 2;
 });
 
-console.log(nums);
+nums.map(function (num) {
+  return num * 2;
+});
+
+
+const oddNums = [1, 3, 5, 7, 9].map(function (num) {
+  return num * 2;
+}
+);
+// console.log(oddNums); // [2, 6, 10, 14, 18]
 
