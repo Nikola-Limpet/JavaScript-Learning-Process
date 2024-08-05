@@ -21,3 +21,8 @@ const greeting = 'Hello';
 const arraysOfChars = [...greeting]; // ['H', 'e', 'l', 'l', 'o']
 console.log(arraysOfChars);
 
+
+const meal = ['Rice', 'Beans', 'Chicken'];
+let [ starter ] = meal;
+console.log(starter); // Rice
+document.getEle
