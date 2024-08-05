@@ -25,3 +25,16 @@ const oddNums = [1, 3, 5, 7, 9].map(function (num) {
 );
 // console.log(oddNums); // [2, 6, 10, 14, 18]
 
+// Working with objects
+const result = [];
+const drone = {
+  speed : 100,
+  color : 'red'
+}
+const droneKeys = Object.keys(drone);
+droneKeys.forEach((key) => {
+  result.push(key, drone[key]);
+});
+
+console.log(result); // ['speed', 100, 'color', 'red']
+
