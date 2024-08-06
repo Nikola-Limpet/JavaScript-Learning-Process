@@ -72,6 +72,8 @@
 // What happens when you don't pass-in any arguments?  
 
 // What happens when you pass values that are not expected?
+// This exericse is given from the Coursera Programming with Javascript course.
+// Which is a part of the Full Stack Web Development Specialization.
 
 // Given variables
 const dishData = [
